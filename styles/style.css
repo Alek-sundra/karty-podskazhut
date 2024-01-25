@@ -123,14 +123,7 @@ button:hover {
 }
 
 .theme_dark .header__theme-button_is-active::after {
-  content: " ";
-  position: absolute;
-  z-index: -1;
-  width: calc(100% + 7px);
-  height: 0.33em;
   background-image: url(../images/pattern.svg);
-  inset-block-end: 2px;
-  inset-inline-end: -4px;
 }
 
 .header__theme-button_is-active {
@@ -156,14 +149,7 @@ button:hover {
 .theme_dark
   .content__text-block_type_first-lettered
   .content__paragraph:first-child::first-letter {
-  display: inline-block;
-  margin-inline-start: -4px;
-  margin-inline-end: 4px;
   border: 1px solid var(--text-color, #b3b3b3);
-  padding: 0 4px;
-  font-weight: 700;
-  font-size: 30px;
-  text-align: center;
 }
 
 .content__figure {
@@ -176,6 +162,7 @@ button:hover {
 .content__picture {
   display: block;
   width: 100%;
+  object-fit: cover;
   margin-block-end: 4px;
 }
 
@@ -193,7 +180,7 @@ button:hover {
   line-height: 2;
 }
 
-.content__paragraph a {
+.content__paragraph__link {
   color: currentColor;
 }
 
@@ -230,14 +217,7 @@ button:hover {
 }
 
 .theme_dark .colored-text::after {
-  content: " ";
-  position: absolute;
-  z-index: -1;
-  width: 220px;
-  height: 0.25em;
   background-image: url(../images/pattern.svg);
-  inset-block-end: 8px;
-  inset-inline-end: -5px;
 }
 
 .content__card-subtitle {
@@ -272,16 +252,7 @@ button:hover {
 }
 
 .theme_dark .content__list-item::before {
-  content: " ";
-  position: absolute;
-  width: 15px;
-  height: 15px;
   background-image: url(../images/marker-dark.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  inset-block-start: calc(50% - 7.5px);
-  inset-inline-start: -25px;
 }
 
 .footer {
